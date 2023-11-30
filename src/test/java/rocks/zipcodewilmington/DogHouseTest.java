@@ -66,6 +66,16 @@ public class DogHouseTest {
     }
 
     // TODO - Create tests for `Integer getNumberOfDogs()`
+    @Test
+    public void testGetNumberOfDogsIsZero(){
+        DogHouse dogHouse = new DogHouse();
+       Integer expect = 0;
+       Integer actual = dogHouse.getNumberOfDogs();
+       Assert.assertEquals(expect,actual);
+        Assert.assertNotNull(dogHouse);
+    }
+
+    //***********************************************************
 
     @Test
     public void testGetNumberOfDogs() {
